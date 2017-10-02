@@ -1,0 +1,932 @@
+2017-09-18 18:32:23 INFO  ConsumerConfig:223 - ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = test_group
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2017-09-18 18:32:23 INFO  AppInfoParser:83 - Kafka version : 0.11.0.0
+2017-09-18 18:32:23 INFO  AppInfoParser:84 - Kafka commitId : cb8625948210849f
+2017-09-18 18:32:23 INFO  AbstractCoordinator:597 - Discovered coordinator localhost:9092 (id: 2147483646 rack: null) for group test_group.
+2017-09-18 18:32:23 INFO  ConsumerCoordinator:419 - Revoking previously assigned partitions [] for group test_group
+2017-09-18 18:32:23 INFO  AbstractCoordinator:432 - (Re-)joining group test_group
+2017-09-18 18:32:23 INFO  AbstractCoordinator:399 - Successfully joined group test_group with generation 5
+2017-09-18 18:32:23 INFO  ConsumerCoordinator:262 - Setting newly assigned partitions [tubeLineStatus-0] for group test_group
+2017-09-18 18:39:12 INFO  ChatboxProcessor:68 - 
+
+Line Bakerloo ---> Good Service
+2017-09-18 18:39:12 INFO  ChatboxProcessor:68 - 
+
+Line Central ---> Good Service
+2017-09-18 18:39:12 INFO  ChatboxProcessor:68 - 
+
+Line Circle ---> Good Service
+2017-09-18 18:39:12 INFO  ChatboxProcessor:68 - 
+
+Line District ---> Part Suspended
+2017-09-18 18:39:12 INFO  ChatboxProcessor:68 - 
+
+Line Hammersmith & City ---> Good Service
+2017-09-18 18:39:12 INFO  ChatboxProcessor:68 - 
+
+Line Jubilee ---> Good Service
+2017-09-18 18:39:12 INFO  ChatboxProcessor:68 - 
+
+Line Metropolitan ---> Good Service
+2017-09-18 18:39:12 INFO  ChatboxProcessor:68 - 
+
+Line Northern ---> Good Service
+2017-09-18 18:39:12 INFO  ChatboxProcessor:68 - 
+
+Line Piccadilly ---> Good Service
+2017-09-18 18:39:12 INFO  ChatboxProcessor:68 - 
+
+Line Victoria ---> Good Service
+2017-09-18 18:39:12 INFO  ChatboxProcessor:68 - 
+
+Line Waterloo & City ---> Good Service
+2017-09-18 18:55:16 INFO  ChatboxProcessor:68 - Line Bakerloo ---> Good Service
+2017-09-18 18:55:16 INFO  ChatboxProcessor:68 - Line Central ---> Good Service
+2017-09-18 18:55:16 INFO  ChatboxProcessor:68 - Line Circle ---> Good Service
+2017-09-18 18:55:16 INFO  ChatboxProcessor:68 - Line District ---> Part Suspended
+2017-09-18 18:55:16 INFO  ChatboxProcessor:68 - Line Hammersmith & City ---> Good Service
+2017-09-18 18:55:16 INFO  ChatboxProcessor:68 - Line Jubilee ---> Good Service
+2017-09-18 18:55:16 INFO  ChatboxProcessor:68 - Line Metropolitan ---> Good Service
+2017-09-18 18:55:16 INFO  ChatboxProcessor:68 - Line Northern ---> Good Service
+2017-09-18 18:55:16 INFO  ChatboxProcessor:68 - Line Piccadilly ---> Good Service
+2017-09-18 18:55:16 INFO  ChatboxProcessor:68 - Line Victoria ---> Good Service
+2017-09-18 18:55:16 INFO  ChatboxProcessor:68 - Line Waterloo & City ---> Good Service
+2017-09-26 11:10:03 INFO  ChatboxProcessor:38 -  Station -> River Street , Clerkenwell
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Phillimore Gardens, Kensington
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Christopher Street, Liverpool Street
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> St. Chad's Street, King's Cross
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Sedding Street, Sloane Square
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Broadcasting House, Marylebone
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Charlbert Street, St. John's Wood
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Lodge Road, St. John's Wood
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> New Globe Walk, Bankside
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Park Street, Bankside
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Brunswick Square, Bloomsbury
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Malet Street, Bloomsbury
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Scala Street, Fitzrovia
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Belgrove Street , King's Cross
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Great Russell Street, Bloomsbury
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Cartwright Gardens , Bloomsbury
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Hatton Wall, Holborn
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Drury Lane, Covent Garden
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Taviton Street, Bloomsbury
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Drummond Street , Euston
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Hampstead Road (Cartmel), Euston
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Northington Street , Holborn
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Red Lion Square, Holborn
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> British Museum, Bloomsbury
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Doric Way , Somers Town
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Ampton Street , Clerkenwell
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Bouverie Street, Temple
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Bolsover Street, Fitzrovia
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Hereford Road, Bayswater
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Windsor Terrace, Hoxton
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Fanshaw Street, Hoxton
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Leonard Circus , Shoreditch
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Central House, Aldgate
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Pancras Road, King's Cross
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> De Vere Gardens, Kensington
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Penywern Road, Earl's Court
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Abingdon Villas, Kensington
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Shoreditch High Street, Shoreditch
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Commercial Street, Shoreditch
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Wenlock Road , Hoxton
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Crawford Street, Marylebone
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Bruton Street, Mayfair
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Boston Place, Marylebone
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Nesham Street, Wapping
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Warwick Avenue Station, Maida Vale
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Godliman Street, St. Paul's
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Curzon Street, Mayfair
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> East Road, Hoxton
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Finsbury Library , Finsbury
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Roscoe Street, St. Luke's
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Grafton Street, Mayfair
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Golden Lane, Barbican
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Finsbury Circus, Liverpool Street
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Paddington Street, Marylebone
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Guilford Street , Bloomsbury
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> New Inn Yard, Shoreditch
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Lisson Grove, St. John's Wood
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Great Dover Street, The Borough
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Cotton Garden Estate, Kennington
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Murray Grove , Hoxton
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> William IV Street, Strand
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Gower Place , Euston
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Holborn Circus, Holborn
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Hatton Garden, Holborn
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Theobald's Road , Holborn
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Euston Road, Euston
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Calshot Street , King's Cross
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Newgate Street , St. Paul's
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Farringdon Lane, Clerkenwell
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Old Street Station, St. Luke's
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Vauxhall Cross, Vauxhall
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Torrens Street, Angel
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Longford Street, The Regent's Park
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Russell Square Station, Bloomsbury
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Sadlers Sports Centre, Finsbury
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Webber Street , Southwark
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Great Titchfield Street, Fitzrovia
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Chancery Lane, Holborn
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Panton Street, West End
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Breams Buildings, Holborn
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Tanner Street, Bermondsey
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Sancroft Street, Vauxhall
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Devonshire Square, Liverpool Street
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Bayley Street , Bloomsbury
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Tavistock Place, Bloomsbury
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Harrington Square 1, Camden Town
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Walnut Tree Walk, Vauxhall
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Borough Road, Elephant & Castle
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Cloudesley Road, Angel
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Bricklayers Arms, Borough
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Aldersgate Street, Barbican
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Falkirk Street, Hoxton
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Gloucester Road (North), Kensington
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Hampstead Road, Euston
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Old Quebec Street, Marylebone
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Albert Embankment, Vauxhall
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Queen Street 1, Bank
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Jewry Street, Aldgate
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Vicarage Gate, Kensington
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Crosswall, Tower
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Westbourne Grove, Bayswater
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Woodstock Street, Mayfair
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Finsbury Leisure Centre, St. Luke's
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Abbey Orchard Street, Westminster
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Soho Square , Soho
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Wellington Road, St. John's Wood
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Park Lane , Hyde Park
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Stonecutter Street, Holborn
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Gloucester Road (Central), South Kensington
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Park Road (Baker Street), The Regent's Park
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Braham Street, Aldgate
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Little Argyll Street, West End
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Lollard Street, Vauxhall
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Rochester Row, Westminster
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Bath Street, St. Luke's
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> The Guildhall, Guildhall
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Baker Street, Marylebone
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Norton Folgate, Liverpool Street
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> St. John Street, Finsbury
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Eaton Square, Belgravia
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Borough High Street, The Borough
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Museum of London, Barbican
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Wood Street, Guildhall
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Emperor's Gate, South Kensington
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Golden Square, Soho
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Tower Gardens , Tower
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Eversholt Street , Camden Town
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Bethnal Green Road, Shoreditch
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Derry Street, Kensington
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Wapping High Street, Wapping
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Clerkenwell Green, Clerkenwell
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Queen Victoria Street, St. Paul's
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Green Street, Mayfair
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Lambeth Road, Vauxhall
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Finsbury Square , Moorgate
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Chapel Place, Marylebone
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> West Cromwell Road, Earl's Court
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Pont Street, Knightsbridge
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Kennington Cross, Kennington
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Ilchester Place, Kensington
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Vauxhall Bridge , Pimlico
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Tachbrook Street, Victoria
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Kennington Road Post Office, Oval
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Holy Trinity Brompton, Knightsbridge
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Chepstow Villas, Notting Hill
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Hampton Street, Walworth
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Bayswater Road, Hyde Park
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Waterloo Station 3, Waterloo
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Lexham Gardens, Kensington
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> New Kent Road, The Borough
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Wright's Lane, Kensington
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Trebovir Road, Earl's Court
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Great Marlborough Street, Soho
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Waterloo Place, St. James's
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Guildhouse Street, Victoria
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Southampton Place, Holborn
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Sloane Avenue, Knightsbridge
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Cleveland Gardens, Bayswater
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Orsett Terrace, Bayswater
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Seville Street, Knightsbridge
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Eccleston Place, Victoria
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Argyll Road, Kensington
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Porchester Place, Paddington
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Hardwick Street, Clerkenwell
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Collingham Gardens, Earl's Court
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Sumner Place, South Kensington
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Waterloo Road, South Bank
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Strand, Strand
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Appold Street, Liverpool Street
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Gloucester Terrace, Bayswater
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Ashley Place, Victoria
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Warwick Square, Pimlico
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> North Audley Street, Mayfair
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Belgrave Square, Belgravia
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Bell Street , Marylebone
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Riverlight North, Nine Elms
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Portland Place, Marylebone
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Alderney Street, Pimlico
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> South Wharf Road, Paddington
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Queen's Gate (South), South Kensington
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Nutford Place, Marylebone
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Claremont Square, Angel
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Rampayne Street, Pimlico
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Hyde Park Corner, Hyde Park
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Wardour Street, Soho
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Bankside Mix, Bankside
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Hop Exchange, The Borough
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Milroy Walk, South Bank
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Union Street, The Borough
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Stamford Street, South Bank
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Great Tower Street, Monument
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> LMU Commercial Road, Whitechapel
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Dorset Square, Marylebone
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Leman Street, Aldgate
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> West Smithfield Rotunda, Farringdon
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Margery Street, Clerkenwell
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> New Road 1 , Whitechapel
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Grosvenor Crescent, Belgravia
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Mallory Street, Marylebone
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Denyer Street, Knightsbridge
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Hinde Street, Marylebone
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Cadogan Place, Knightsbridge
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Campden Hill Road, Notting Hill
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Wellington Arch, Hyde Park
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Endsleigh Gardens, Euston
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Moorfields, Moorgate
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Old Brompton Road, South Kensington
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Wormwood Street, Liverpool Street
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> St. Luke's Church, Chelsea
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Bramham Gardens, Earl's Court
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Chelsea Green, Chelsea
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Horseferry Road, Westminster
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Knightsbridge, Hyde Park
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Rodney Road , Walworth
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Whiteley's, Bayswater
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Notting Hill Gate Station, Notting Hill
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Charles II Street, West End
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Great Percy Street, Clerkenwell
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> St. James's Square, St. James's
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Whitehall Place, Strand
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Poured Lines, Bankside
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Queen's Gate (Central), South Kensington
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Carey Street, Holborn
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Pall Mall East, West End
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Liverpool Road (N1 Centre), Angel
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Kennington Road  , Vauxhall
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Fashion Street, Whitechapel
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Dock Street, Wapping
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Frampton Street, Paddington
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Warren Street Station, Euston
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Colombo Street, Southwark
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Beaumont Street, Marylebone
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Gloucester Street, Pimlico
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Earnshaw Street , Covent Garden
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Grosvenor Road, Pimlico
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Berry Street, Clerkenwell
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> St. John's Wood Church, The Regent's Park
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Triangle Car Park, Hyde Park
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Harper Road, The Borough
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Royal Avenue 1, Chelsea
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Brushfield Street, Liverpool Street
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Jubilee Gardens, South Bank
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Shoreditch Park, Hoxton
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Chadwell Street, Angel
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Clifton Road, Maida Vale
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Houghton Street, Strand
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Westminster University, Marylebone
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Kensington Gore, Knightsbridge
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Broadwick Street, Soho
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Princes Square, Bayswater
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> LSBU (Borough Road), Elephant & Castle
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> St. Mary Axe, Aldgate
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Tysoe Street, Clerkenwell
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Southwick Street, Paddington
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Queen's Gate (North), Kensington
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Regency Street, Westminster
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Belgrave Road, Victoria
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Empire Square, The Borough
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Kennington Lane Rail Bridge, Vauxhall
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> London Zoo,  The Regent's Park
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Baylis Road, Waterloo
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Belvedere Road 1, South Bank
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Warwick Road, Olympia
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Barbican Centre, Barbican
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Lower Thames Street, Monument
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Kensington Church Street, Kensington
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Tooley Street, Bermondsey
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> North Wharf Road, Paddington
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Royal Avenue 2, Chelsea
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Smith Square, Westminster
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Royal London Hospital, Whitechapel
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Kingsway, Covent Garden
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Lambeth North Station, Waterloo
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> St. John's Wood Road, St. John's Wood
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Bedford Way, Bloomsbury
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Elizabeth Bridge, Victoria
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> South Audley Street, Mayfair
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Winsland Street, Paddington
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Claverton Street, Pimlico
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Montpelier Street, Knightsbridge
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Kensington Olympia Station, Olympia
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> St. George's Square, Pimlico
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Swan Street, The Borough
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Knaresborough Place, Earl's Court
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Geraldine Street, Elephant & Castle
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Curlew Street, Shad Thames
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Vincent Square, Westminster
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Serpentine Car Park, Hyde Park
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Marylebone Lane, Marylebone
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Putney Pier, Wandsworth
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Albert Gate, Hyde Park
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Kennington Lane Tesco, Vauxhall
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Rathbone Street, Fitzrovia 
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Black Lion Gate, Kensington Gardens
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Long Lane , Bermondsey
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Embankment (Savoy), Strand
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Black Prince Road, Vauxhall
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Grove End Road, St. John's Wood
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Wells Street, Fitzrovia 
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Tyers Gate, Bermondsey
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> The Tennis Courts, The Regent's Park
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Dickens Square, Borough
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Sackville Street, Mayfair
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Baldwin Street, St. Luke's
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Queen Mother Sports Centre, Victoria
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Bermondsey Street, Bermondsey
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Palissy Street, Shoreditch
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Clifton Street, Shoreditch
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Ontario Street, Elephant & Castle
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> St. Martin's Street, West End
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Graham Street, Angel
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> New North Road 1, Hoxton
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> New North Road 2, Hoxton
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Prince Albert Road, The Regent's Park
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Eastbourne Mews, Paddington
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Bunhill Row, Moorgate
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Nevern Place, Earl's Court
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Palace Gardens Terrace, Notting Hill
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Concert Hall Approach 1, South Bank
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Tavistock Street, Covent Garden
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Concert Hall Approach 2, South Bank
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Pembridge Villas, Notting Hill
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Wellington Street , Strand
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Risinghill Street, Angel
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Bank of England Museum, Bank
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Craven Street, Strand
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> London Zoo Car Park, The Regent's Park
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Goswell Road (City Uni), Finsbury
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Flood Street, Chelsea
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Lower Marsh, Waterloo
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Grosvenor Square, Mayfair
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> St. George Street, Mayfair
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Queen's Gate, Kensington Gardens
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Macclesfield Rd, St Lukes
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Vauxhall Street, Vauxhall
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Greycoat Street , Westminster
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Northumberland Avenue, Strand
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Oval Way, Vauxhall
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> South Kensington Station, South Kensington
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Howland Street, Fitzrovia
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> High Holborn , Covent Garden
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Butler Place, Westminster
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Howick Place, Westminster
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Waterloo Station 2, Waterloo
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Royal College Street, Camden Town
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Lord's, St. John's Wood
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Alfred Place, Bloomsbury
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> City Road, Angel
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Millennium Hotel, Mayfair
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Harrowby Street, Marylebone
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Harriet Street, Knightsbridge
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Paddington Green, Paddington
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> King Edward Walk, Waterloo
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Sardinia Street, Holborn
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Prince Consort Road, Knightsbridge
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Waterloo Station 1, Waterloo
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Kensington Town Hall, Kensington
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Millbank Tower, Pimlico
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Waterloo Bridge, South Bank
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Natural History Museum, South Kensington
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Turquoise Island, Notting Hill
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Stanhope Gate, Mayfair
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Charlotte Street, Fitzrovia
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Farm Street, Mayfair
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Frith Street, Soho
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Marloes Road, Kensington
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Moor Street, Soho
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Fire Brigade Pier, Vauxhall
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Southampton Street, Strand
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Upper Grosvenor Street, Mayfair
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Buxton Street 1, Shoreditch
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Imperial College, Knightsbridge
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Snow Hill, Farringdon
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Aberdeen Place, St. John's Wood
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Cadogan Gardens, Chelsea
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Shouldham Street, Marylebone
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Devonshire Terrace, Bayswater
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Holland Park, Kensington
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Brick Lane Market, Shoreditch
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> George Street, Marylebone
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Columbia Road, Shoreditch
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Penfold Street, Marylebone
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> George Place Mews, Marylebone
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Palace Gate, Kensington Gardens
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Gloucester Road Station, South Kensington
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Paddington Green Police Station, Paddington
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Strata, Elephant & Castle
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Edgware Road Station, Marylebone
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Walworth Road, Elephant & Castle
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Cleaver Street, Kennington
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Chelsea Bridge, Pimlico
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Southwark Station 1, Southwark
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Southwark Station 2, Southwark
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Eaton Square (South), Belgravia
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Ebury Bridge, Pimlico
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Harrington Square 2, Camden Town
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Vincent Street, Pimlico
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Cheapside, Bank
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Exhibition Road, Knightsbridge
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> South Parade, Chelsea
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Crinan Street, King's Cross
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Exhibition Road Museums, South Kensington
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Wren Street, Holborn
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Kennington Station, Kennington
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Red Lion Street, Holborn
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Vauxhall Walk, Vauxhall
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Killick Street, King's Cross
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Kennington Oval, Oval
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Sail Street, Vauxhall
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Walmer Road, Avondale
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Philpot Street, Whitechapel
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Bethnal Green Garden, Bethnal Green
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Cheshire Street, Bethnal Green
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> York Hall, Bethnal Green
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Jubilee Crescent, Cubitt Town
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Fisherman's Walk West, Canary Wharf
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Shadwell Station, Shadwell
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Jubilee Street, Stepney
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Hermitage Court, Wapping
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> St. Katharine's Way, Tower
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Garnet Street, Shadwell
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Napier Avenue, Millwall
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> East Ferry Road, Cubitt Town
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Parkway, Camden Town
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Castlehaven Road, Camden Town
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Wapping Lane, Wapping
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Gunmakers Lane, Old Ford
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Burdett Road, Mile End
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Bonny Street, Camden Town
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Thurtle Road, Haggerston
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> St. Mary & St. Michael Church, Stepney
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Pitfield Street North,Hoxton
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Whiston Road, Haggerston
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Southern Grove, Bow
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Cantrell Road, Bow
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Lindfield Street, Poplar
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Mostyn Grove, Bow
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Hewison Street, Old Ford
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Malmesbury Road, Bow
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Millharbour, Millwall
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Castalia Square, Cubitt Town
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Lightermans Road, Millwall
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Stebondale Street, Cubitt Town
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Spindrift Avenue, Millwall
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Stepney Green Station, Stepney
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Pott Street, Bethnal Green
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Flamborough Street, Limehouse
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Saunders Ness Road, Cubitt Town
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Thornfield House, Poplar
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Albert Gardens, Stepney
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Bromley High Street, Bow
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Old Ford Road, Bethnal Green
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Granby Street, Shoreditch
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Canton Street, Poplar
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Reardon Street, Wapping
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Christian Street, Whitechapel
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Pennington Street, Wapping
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Queen Mary's, Mile End
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> The Green Bridge, Mile End
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> South Quay East, Canary Wharf
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Bow Church Station, Bow
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Devons Road, Bow
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Merchant Street, Bow
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Bow Road Station, Bow
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Furze Green, Bow
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Ansell House, Stepney
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Cephas Street, Bethnal Green
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Cleveland Way, Stepney
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> St. John's Park, Cubitt Town
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Ackroyd Drive, Bow
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Bell Lane, Liverpool Street
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Clarkson Street, Bethnal Green
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Fournier Street, Whitechapel
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Fore Street, Guildhall
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Westferry DLR, Limehouse
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Sutton Street, Shadwell
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Pritchard's Road, Bethnal Green
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Watney Market, Stepney
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Portman Square, Marylebone
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Russell Gardens, Olympia
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Chrisp Street Market, Poplar
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Ford Road, Old Ford
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Antill Road, Mile End
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Teviot Street, Poplar
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Bancroft Road, Bethnal Green
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Driffield Road, Old Ford
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Clinton Road, Mile End
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Langdon Park, Poplar
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Lancaster Gate , Bayswater
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Lancaster Drive, Blackwall
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Hansard Mews, Holland Park
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Clarges Street, Mayfair
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Manresa Road, Chelsea
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Newby Place, Poplar
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Twig Folly Bridge, Mile End
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Jubilee Plaza, Canary Wharf
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Wellington Row, Bethnal Green
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Goldsmith's Row, Haggerston
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Gloucester Avenue, Camden Town
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Queensbridge Road, Haggerston
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Old Montague Street, Whitechapel
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Naval Row, Blackwall
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Hoxton Station, Hoxton
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Albany Street, The Regent's Park
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Green Park Station, Mayfair
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Salmon Lane, Limehouse
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Lansdowne Walk, Ladbroke Grove
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Percival Street, Finsbury
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Arlington Road, Camden Town
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> New Fetter Lane, Holborn
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> East India DLR, Blackwall
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Westminster Bridge Road, Elephant & Castle
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Gaywood  Street, Elephant & Castle
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Harford Street, Mile End
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Watney Street, Shadwell
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Regent's Row , Haggerston 
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Aberfeldy Street, Poplar
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Heron Quays DLR, Canary Wharf
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> King Edward Street, St Pauls
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Page Street, Westminster
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Abbotsbury Road, Holland Park
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Ladbroke Grove Central, Ladbroke Grove
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Rectory Square, Stepney
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Bury Place, Holborn
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Preston's Road, Cubitt Town
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Somerset House, Strand
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Westfield Ariel Way, White City
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Bishop's Bridge Road West, Bayswater
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Pitfield Street Central, Hoxton
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Upper Bank Street, Canary Wharf
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Westfield Southern Terrace ,Shepherd's Bush
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Greenland Road, Camden Town
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Limerston Street, West Chelsea
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Eagle Wharf Road, Hoxton
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Alpha Grove, Millwall
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Globe Town Market, Bethnal Green
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Hollybush Gardens, Bethnal Green
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Queen Street 2, Bank
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Doddington Grove, Kennington
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> New Cavendish Street, Marylebone
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Abingdon Green, Westminster
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Ilchester Gardens, Bayswater
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Mudchute DLR, Cubitt Town
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Monument Street, Monument
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Hoxton Street, Hoxton
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Drayton Gardens, West Chelsea
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Greenberry Street, St.John's Wood
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Westfield Library Corner, Shepherd's Bush
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Bishop's Bridge Road East, Bayswater
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Northdown Street, King's Cross
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Kingsway Southbound, Strand
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Hammersmith Road, Hammersmith
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Parson's Green , Parson's Green
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Fulham Park Road, Fulham
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Southerton Road, Hammersmith
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Manbre Road, Hammersmith
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> South Lambeth Road, Vauxhall
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> BBC White City, White City
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Union Grove, Wandsworth Road
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Caldwell Street, Stockwell
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> St Martins Close, Camden Town
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Seymour Place, Marylebone
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Addison Road, Holland Park
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Putney Bridge Station, Fulham
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Colet Gardens, Hammersmith
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Sugden Road, Clapham
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Danvers Street, West Chelsea
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Princedale Road , Holland Park
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Wandsworth Rd, Isley Court, Wandsworth Road
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Woodstock Grove, Shepherd's Bush
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Bradmead, Battersea Park
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Finlay Street, Fulham
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Aintree Street, Fulham
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Elysium Place, Fulham
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Eel Brook Common, Walham Green
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Irene Road, Parsons Green
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Surrey Lane, Battersea
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Wandsworth Town Station, Wandsworth
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Lansdowne Road, Ladbroke Grove
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Nantes Close, Wandsworth
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Courland Grove, Wandsworth Road
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Queen's Circus, Battersea Park
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Normand Park, West Kensington
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Holden Street, Battersea
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> William Morris Way, Sands End
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Morie Street, Wandsworth
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Clarence Walk, Stockwell
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Battersea Park Road, Nine Elms
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Sheepcote Lane, Battersea
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Vereker Road, West Kensington
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Brook Green South, Brook Green
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Greyhound Road, Hammersmith
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> South Park, Sands End
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Spencer Park, Wandsworth Common
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Falcon Road, Clapham Junction
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Coomer Place, West Kensington
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Silverthorne Road, Battersea
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Archbishop's Park, Waterloo
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Fawcett Close, Battersea
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> All Saints' Road, Portobello
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Rainville Road, Hammersmith
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Great Suffolk Street, The Borough
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Buckingham Gate, Westminster
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Richmond Way, Shepherd's Bush
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Peterborough Road, Sands End
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> World's End Place, West Chelsea
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> St. Mark's Road, North Kensington
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Thorndike Close, West Chelsea
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Evesham Street, Avondale
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Simpson Street, Clapham Junction
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Ashmole Estate, Oval
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Crabtree Lane, Fulham
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Broomhouse Lane, Parsons Green
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Blythe Road West, Shepherd's Bush
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Ethelburga Estate, Battersea Park
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Grant Road West, Clapham Junction
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> West Kensington Station, West Kensington
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> All Saints Church, Portobello
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Phene Street, Chelsea
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Clarendon Road, Avondale
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Austin Road, Battersea Park
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Smugglers Way, Wandsworth
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Olympia Way, Olympia
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Shepherd's Bush Road North, Shepherd's Bush
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Ravenscourt Park Station, Hammersmith
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Teversham Lane, Stockwell
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Ashley Crescent, Battersea
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Parsons Green Station, Parsons Green
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Grant Road Central, Clapham Junction
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Hibbert Street, Battersea
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Carnegie Street, King's Cross
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Usk Road, Clapham Junction
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Hartington Road, Stockwell
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Heath Road, Battersea
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Esmond Street, Putney
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Orbel Street, Battersea
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Westbridge Road, Battersea
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Bishop's Avenue, Fulham
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Crisp Road, Hammersmith
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Dorothy Road, Clapham Junction
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Neville Gill Close, Wandsworth
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Osiers Road, Wandsworth
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Beryl Road, Hammersmith
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Maclise Road, Olympia
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Northfields, Wandsworth
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Spanish Road, Clapham Junction
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Stanley Grove, Battersea
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Erin Close, Walham Green
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Cadogan Close, Victoria Park
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Felsham Road, Putney
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Putney Rail Station, Putney
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Islington Green, Angel
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Charing Cross Hospital, Hammersmith
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Charlotte Terrace, Angel
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Shoreditch Court, Haggerston
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Belford House, Haggerston
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Battersea Church Road, Battersea
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Vicarage Crescent, Battersea
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Durant Street, Bethnal Green
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> St. Bride Street, Holborn
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Mexfield Road, East Putney
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Snowsfields, London Bridge
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Barons Court Station, West Kensington
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Disraeli Road, Putney
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Montserrat Road , Putney
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Albert Bridge Road, Battersea Park
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Everington Street, Fulham
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Mile End Stadium, Mile End
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Hawley Crescent, Camden Town
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Stewart's Road, Wandsworth Road
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Aylward Street, Stepney
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Stainsby Road , Poplar
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Dunston Road , Haggerston
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Ada Street, Hackney Central
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Victoria Park Road, Hackney Central
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Star Road, West Kensington
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Wendon Street, Old Ford
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Finnis Street, Bethnal Green
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Stephendale Road, Sands End
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Alma Road, Wandsworth
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Thessaly Road North, Wandsworth Road
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Alfreda Street, Battersea Park
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Chesilton Road, Fulham
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Putney Bridge Road, East Putney
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> St. Peter's Terrace, Fulham
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Bridge Avenue, Hammersmith
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Michael Road, Walham Green
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Duke Street Hill, London Bridge
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Park Lane, Mayfair
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Plough Terrace, Clapham Junction
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Grant Road East, Clapham Junction
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Queensdale Road, Shepherd's Bush
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Fulham Broadway, Walham Green
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Imperial Road, Sands End
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Hortensia Road, West Brompton
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Sirdar Road, Avondale
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Freston Road, Avondale
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Blenheim Crescent, Ladbroke Grove
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Oxford Road, Putney
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Ingrave Street, Clapham Junction
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Upcerne Road, West Chelsea
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Lots Road, West Chelsea
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Ormonde Gate, Chelsea
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Hertford Road, De Beauvoir Town
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Haggerston Road, Haggerston 
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Culvert Road, Battersea
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Newton Street, Covent Garden
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Manfred Road, East Putney
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Hammersmith Town Hall, Hammersmith
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Grenfell Road, Avondale
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> The Vale, Chelsea
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Prince of Wales Drive, Battersea Park
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Harcourt Terrace, West Brompton
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Westbourne Park Road, Portobello
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Broadley Terrace, Marylebone
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Rossmore Road, Marylebone
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Humbolt Road, Fulham
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Storey's Gate, Westminster
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Mile End Park Leisure Centre, Mile End
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> St. John's Road, Clapham Junction
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Ranelagh Gardens, Fulham
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Ram Street, Wandsworth
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Santos Road, Wandsworth
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Clapham Common North Side, Clapham Common
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Sandilands Road, Walham Green
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Gwendwr Road, West Kensington
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Rifle Place, Avondale
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Binfield Road, Stockwell
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Tallis Street, Temple
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Hurlingham Park, Parsons Green
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Little Brook Green, Brook Green
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Abyssinia Close, Clapham Junction
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Limburg Road, Clapham Junction
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Houndsditch, Aldgate
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Imperial Wharf Station, Sands End
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Victoria & Albert Museum, South Kensington
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Halford Road, West Kensington
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Monier Road, Hackney Wick
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> East Village, Queen Elizabeth Olympic Park
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Aquatic Centre, Queen Elizabeth Olympic Park
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Lee Valley VeloPark, Queen Elizabeth Olympic Park
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Timber Lodge, Queen Elizabeth Olympic Park
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Copper Box Arena, Queen Elizabeth Olympic Park
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Podium, Queen Elizabeth Olympic Park
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Stratford Station, Stratford
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Blackfriars Road, Southwark
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Cromer Street, Bloomsbury
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Lansdowne Way Bus Garage, Stockwell
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Melton Street, Euston
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Coram Street, Bloomsbury
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Ossulston Street, Somers Town
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Birkenhead Street, King's Cross
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Sopwith Way, Battersea Park
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Lavington Street, Bankside
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Albert Square, Stockwell
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Southwark Street, Bankside
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Good's Way, King's Cross
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Bevington Road, North Kensington
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Handyside Street, King's Cross
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Bevington Road West, North Kensington
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Stockwell Roundabout, Stockwell
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Lincoln's Inn Fields, Holborn
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Tate Modern, Bankside
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Westferry Circus, Canary Wharf
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Here East North, Queen Elizabeth Olympic Park
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> New Spring Gardens Walk, Vauxhall
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Clapham Road, Lingham Street, Stockwell
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Lambeth Palace Road, Waterloo
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Here East South, Queen Elizabeth Olympic Park
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Riverlight South, Nine Elms
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> One Tower Bridge, Bermondsey
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Belvedere Road 2, South Bank
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Victory Place, Walworth
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Battersea Power Station, Battersea Park
+2017-09-26 11:10:04 INFO  ChatboxProcessor:38 -  Station -> Allington street, Westminster
+2017-09-29 14:20:16 INFO  TubeLineStatusParser:25 - [{"$type":"Tfl.Api.Presentation.Entities.Line, Tfl.Api.Presentation.Entities","id":"bakerloo","name":"Bakerloo","modeName":"tube","disruptions":[],"created":"2017-09-26T11:16:37.13Z","modified":"2017-09-26T11:16:37.13Z","lineStatuses":[{"$type":"Tfl.Api.Presentation.Entities.LineStatus, Tfl.Api.Presentation.Entities","id":0,"statusSeverity":10,"statusSeverityDescription":"Good Service","created":"0001-01-01T00:00:00","validityPeriods":[]}],"routeSections":[],"serviceTypes":[{"$type":"Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities","name":"Regular","uri":"/Line/Route?ids=Bakerloo&serviceTypes=Regular"}],"crowding":{"$type":"Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.Line, Tfl.Api.Presentation.Entities","id":"central","name":"Central","modeName":"tube","disruptions":[],"created":"2017-09-26T11:16:37.137Z","modified":"2017-09-26T11:16:37.137Z","lineStatuses":[{"$type":"Tfl.Api.Presentation.Entities.LineStatus, Tfl.Api.Presentation.Entities","id":0,"statusSeverity":10,"statusSeverityDescription":"Good Service","created":"0001-01-01T00:00:00","validityPeriods":[]}],"routeSections":[],"serviceTypes":[{"$type":"Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities","name":"Regular","uri":"/Line/Route?ids=Central&serviceTypes=Regular"},{"$type":"Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities","name":"Night","uri":"/Line/Route?ids=Central&serviceTypes=Night"}],"crowding":{"$type":"Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.Line, Tfl.Api.Presentation.Entities","id":"circle","name":"Circle","modeName":"tube","disruptions":[],"created":"2017-09-26T11:16:37.13Z","modified":"2017-09-26T11:16:37.13Z","lineStatuses":[{"$type":"Tfl.Api.Presentation.Entities.LineStatus, Tfl.Api.Presentation.Entities","id":0,"statusSeverity":10,"statusSeverityDescription":"Good Service","created":"0001-01-01T00:00:00","validityPeriods":[]}],"routeSections":[],"serviceTypes":[{"$type":"Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities","name":"Regular","uri":"/Line/Route?ids=Circle&serviceTypes=Regular"}],"crowding":{"$type":"Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.Line, Tfl.Api.Presentation.Entities","id":"district","name":"District","modeName":"tube","disruptions":[],"created":"2017-09-26T11:16:37.127Z","modified":"2017-09-26T11:16:37.127Z","lineStatuses":[{"$type":"Tfl.Api.Presentation.Entities.LineStatus, Tfl.Api.Presentation.Entities","id":0,"lineId":"district","statusSeverity":3,"statusSeverityDescription":"Part Suspended","reason":"District Line: No service between Turnham Green and Richmond due to a signal failure at Richmond. Tickets are being accepted on local buses and South Western Railway. GOOD SERVICE on the rest of the line. ","created":"0001-01-01T00:00:00","validityPeriods":[{"$type":"Tfl.Api.Presentation.Entities.ValidityPeriod, Tfl.Api.Presentation.Entities","fromDate":"2017-09-29T11:18:35Z","toDate":"2017-09-29T14:18:35Z","isNow":true}],"disruption":{"$type":"Tfl.Api.Presentation.Entities.Disruption, Tfl.Api.Presentation.Entities","category":"RealTime","categoryDescription":"RealTime","description":"District Line: No service between Turnham Green and Richmond due to a signal failure at Richmond. Tickets are being accepted on local buses and South Western Railway. GOOD SERVICE on the rest of the line. ","affectedRoutes":[],"affectedStops":[],"isBlocking":true,"closureText":"partSuspended"}}],"routeSections":[],"serviceTypes":[{"$type":"Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities","name":"Regular","uri":"/Line/Route?ids=District&serviceTypes=Regular"}],"crowding":{"$type":"Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.Line, Tfl.Api.Presentation.Entities","id":"hammersmith-city","name":"Hammersmith & City","modeName":"tube","disruptions":[],"created":"2017-09-26T11:16:37.127Z","modified":"2017-09-26T11:16:37.127Z","lineStatuses":[{"$type":"Tfl.Api.Presentation.Entities.LineStatus, Tfl.Api.Presentation.Entities","id":0,"statusSeverity":10,"statusSeverityDescription":"Good Service","created":"0001-01-01T00:00:00","validityPeriods":[]}],"routeSections":[],"serviceTypes":[{"$type":"Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities","name":"Regular","uri":"/Line/Route?ids=Hammersmith & City&serviceTypes=Regular"}],"crowding":{"$type":"Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.Line, Tfl.Api.Presentation.Entities","id":"jubilee","name":"Jubilee","modeName":"tube","disruptions":[],"created":"2017-09-26T11:16:37.137Z","modified":"2017-09-26T11:16:37.137Z","lineStatuses":[{"$type":"Tfl.Api.Presentation.Entities.LineStatus, Tfl.Api.Presentation.Entities","id":0,"statusSeverity":10,"statusSeverityDescription":"Good Service","created":"0001-01-01T00:00:00","validityPeriods":[]}],"routeSections":[],"serviceTypes":[{"$type":"Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities","name":"Regular","uri":"/Line/Route?ids=Jubilee&serviceTypes=Regular"},{"$type":"Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities","name":"Night","uri":"/Line/Route?ids=Jubilee&serviceTypes=Night"}],"crowding":{"$type":"Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.Line, Tfl.Api.Presentation.Entities","id":"metropolitan","name":"Metropolitan","modeName":"tube","disruptions":[],"created":"2017-09-26T11:16:37.127Z","modified":"2017-09-26T11:16:37.127Z","lineStatuses":[{"$type":"Tfl.Api.Presentation.Entities.LineStatus, Tfl.Api.Presentation.Entities","id":0,"statusSeverity":10,"statusSeverityDescription":"Good Service","created":"0001-01-01T00:00:00","validityPeriods":[]}],"routeSections":[],"serviceTypes":[{"$type":"Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities","name":"Regular","uri":"/Line/Route?ids=Metropolitan&serviceTypes=Regular"}],"crowding":{"$type":"Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.Line, Tfl.Api.Presentation.Entities","id":"northern","name":"Northern","modeName":"tube","disruptions":[],"created":"2017-09-26T11:16:37.127Z","modified":"2017-09-26T11:16:37.127Z","lineStatuses":[{"$type":"Tfl.Api.Presentation.Entities.LineStatus, Tfl.Api.Presentation.Entities","id":0,"statusSeverity":10,"statusSeverityDescription":"Good Service","created":"0001-01-01T00:00:00","validityPeriods":[]}],"routeSections":[],"serviceTypes":[{"$type":"Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities","name":"Regular","uri":"/Line/Route?ids=Northern&serviceTypes=Regular"},{"$type":"Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities","name":"Night","uri":"/Line/Route?ids=Northern&serviceTypes=Night"}],"crowding":{"$type":"Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.Line, Tfl.Api.Presentation.Entities","id":"piccadilly","name":"Piccadilly","modeName":"tube","disruptions":[],"created":"2017-09-26T11:16:37.127Z","modified":"2017-09-26T11:16:37.127Z","lineStatuses":[{"$type":"Tfl.Api.Presentation.Entities.LineStatus, Tfl.Api.Presentation.Entities","id":0,"statusSeverity":10,"statusSeverityDescription":"Good Service","created":"0001-01-01T00:00:00","validityPeriods":[]}],"routeSections":[],"serviceTypes":[{"$type":"Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities","name":"Regular","uri":"/Line/Route?ids=Piccadilly&serviceTypes=Regular"},{"$type":"Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities","name":"Night","uri":"/Line/Route?ids=Piccadilly&serviceTypes=Night"}],"crowding":{"$type":"Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.Line, Tfl.Api.Presentation.Entities","id":"victoria","name":"Victoria","modeName":"tube","disruptions":[],"created":"2017-09-26T11:16:37.143Z","modified":"2017-09-26T11:16:37.143Z","lineStatuses":[{"$type":"Tfl.Api.Presentation.Entities.LineStatus, Tfl.Api.Presentation.Entities","id":0,"statusSeverity":10,"statusSeverityDescription":"Good Service","created":"0001-01-01T00:00:00","validityPeriods":[]}],"routeSections":[],"serviceTypes":[{"$type":"Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities","name":"Regular","uri":"/Line/Route?ids=Victoria&serviceTypes=Regular"},{"$type":"Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities","name":"Night","uri":"/Line/Route?ids=Victoria&serviceTypes=Night"}],"crowding":{"$type":"Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.Line, Tfl.Api.Presentation.Entities","id":"waterloo-city","name":"Waterloo & City","modeName":"tube","disruptions":[],"created":"2017-09-26T11:16:37.127Z","modified":"2017-09-26T11:16:37.127Z","lineStatuses":[{"$type":"Tfl.Api.Presentation.Entities.LineStatus, Tfl.Api.Presentation.Entities","id":0,"statusSeverity":10,"statusSeverityDescription":"Good Service","created":"0001-01-01T00:00:00","validityPeriods":[]}],"routeSections":[],"serviceTypes":[{"$type":"Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities","name":"Regular","uri":"/Line/Route?ids=Waterloo & City&serviceTypes=Regular"}],"crowding":{"$type":"Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"}}]
+2017-09-29 14:20:16 INFO  TubeLineStatusParser:47 -  ------------ Datos parseados correctamente ------------------
+2017-09-29 14:21:40 INFO  TubeLineStatusParser:25 - [{"$type":"Tfl.Api.Presentation.Entities.Line, Tfl.Api.Presentation.Entities","id":"bakerloo","name":"Bakerloo","modeName":"tube","disruptions":[],"created":"2017-09-26T11:16:37.13Z","modified":"2017-09-26T11:16:37.13Z","lineStatuses":[{"$type":"Tfl.Api.Presentation.Entities.LineStatus, Tfl.Api.Presentation.Entities","id":0,"statusSeverity":10,"statusSeverityDescription":"Good Service","created":"0001-01-01T00:00:00","validityPeriods":[]}],"routeSections":[],"serviceTypes":[{"$type":"Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities","name":"Regular","uri":"/Line/Route?ids=Bakerloo&serviceTypes=Regular"}],"crowding":{"$type":"Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.Line, Tfl.Api.Presentation.Entities","id":"central","name":"Central","modeName":"tube","disruptions":[],"created":"2017-09-26T11:16:37.137Z","modified":"2017-09-26T11:16:37.137Z","lineStatuses":[{"$type":"Tfl.Api.Presentation.Entities.LineStatus, Tfl.Api.Presentation.Entities","id":0,"statusSeverity":10,"statusSeverityDescription":"Good Service","created":"0001-01-01T00:00:00","validityPeriods":[]}],"routeSections":[],"serviceTypes":[{"$type":"Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities","name":"Regular","uri":"/Line/Route?ids=Central&serviceTypes=Regular"},{"$type":"Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities","name":"Night","uri":"/Line/Route?ids=Central&serviceTypes=Night"}],"crowding":{"$type":"Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.Line, Tfl.Api.Presentation.Entities","id":"circle","name":"Circle","modeName":"tube","disruptions":[],"created":"2017-09-26T11:16:37.13Z","modified":"2017-09-26T11:16:37.13Z","lineStatuses":[{"$type":"Tfl.Api.Presentation.Entities.LineStatus, Tfl.Api.Presentation.Entities","id":0,"statusSeverity":10,"statusSeverityDescription":"Good Service","created":"0001-01-01T00:00:00","validityPeriods":[]}],"routeSections":[],"serviceTypes":[{"$type":"Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities","name":"Regular","uri":"/Line/Route?ids=Circle&serviceTypes=Regular"}],"crowding":{"$type":"Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.Line, Tfl.Api.Presentation.Entities","id":"district","name":"District","modeName":"tube","disruptions":[],"created":"2017-09-26T11:16:37.127Z","modified":"2017-09-26T11:16:37.127Z","lineStatuses":[{"$type":"Tfl.Api.Presentation.Entities.LineStatus, Tfl.Api.Presentation.Entities","id":0,"lineId":"district","statusSeverity":3,"statusSeverityDescription":"Part Suspended","reason":"District Line: No service between Turnham Green and Richmond due to a signal failure at Richmond. Tickets are being accepted on local buses and South Western Railway. GOOD SERVICE on the rest of the line. ","created":"0001-01-01T00:00:00","validityPeriods":[{"$type":"Tfl.Api.Presentation.Entities.ValidityPeriod, Tfl.Api.Presentation.Entities","fromDate":"2017-09-29T11:18:35Z","toDate":"2017-09-29T14:18:35Z","isNow":true}],"disruption":{"$type":"Tfl.Api.Presentation.Entities.Disruption, Tfl.Api.Presentation.Entities","category":"RealTime","categoryDescription":"RealTime","description":"District Line: No service between Turnham Green and Richmond due to a signal failure at Richmond. Tickets are being accepted on local buses and South Western Railway. GOOD SERVICE on the rest of the line. ","affectedRoutes":[],"affectedStops":[],"isBlocking":true,"closureText":"partSuspended"}}],"routeSections":[],"serviceTypes":[{"$type":"Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities","name":"Regular","uri":"/Line/Route?ids=District&serviceTypes=Regular"}],"crowding":{"$type":"Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.Line, Tfl.Api.Presentation.Entities","id":"hammersmith-city","name":"Hammersmith & City","modeName":"tube","disruptions":[],"created":"2017-09-26T11:16:37.127Z","modified":"2017-09-26T11:16:37.127Z","lineStatuses":[{"$type":"Tfl.Api.Presentation.Entities.LineStatus, Tfl.Api.Presentation.Entities","id":0,"statusSeverity":10,"statusSeverityDescription":"Good Service","created":"0001-01-01T00:00:00","validityPeriods":[]}],"routeSections":[],"serviceTypes":[{"$type":"Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities","name":"Regular","uri":"/Line/Route?ids=Hammersmith & City&serviceTypes=Regular"}],"crowding":{"$type":"Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.Line, Tfl.Api.Presentation.Entities","id":"jubilee","name":"Jubilee","modeName":"tube","disruptions":[],"created":"2017-09-26T11:16:37.137Z","modified":"2017-09-26T11:16:37.137Z","lineStatuses":[{"$type":"Tfl.Api.Presentation.Entities.LineStatus, Tfl.Api.Presentation.Entities","id":0,"statusSeverity":10,"statusSeverityDescription":"Good Service","created":"0001-01-01T00:00:00","validityPeriods":[]}],"routeSections":[],"serviceTypes":[{"$type":"Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities","name":"Regular","uri":"/Line/Route?ids=Jubilee&serviceTypes=Regular"},{"$type":"Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities","name":"Night","uri":"/Line/Route?ids=Jubilee&serviceTypes=Night"}],"crowding":{"$type":"Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.Line, Tfl.Api.Presentation.Entities","id":"metropolitan","name":"Metropolitan","modeName":"tube","disruptions":[],"created":"2017-09-26T11:16:37.127Z","modified":"2017-09-26T11:16:37.127Z","lineStatuses":[{"$type":"Tfl.Api.Presentation.Entities.LineStatus, Tfl.Api.Presentation.Entities","id":0,"statusSeverity":10,"statusSeverityDescription":"Good Service","created":"0001-01-01T00:00:00","validityPeriods":[]}],"routeSections":[],"serviceTypes":[{"$type":"Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities","name":"Regular","uri":"/Line/Route?ids=Metropolitan&serviceTypes=Regular"}],"crowding":{"$type":"Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.Line, Tfl.Api.Presentation.Entities","id":"northern","name":"Northern","modeName":"tube","disruptions":[],"created":"2017-09-26T11:16:37.127Z","modified":"2017-09-26T11:16:37.127Z","lineStatuses":[{"$type":"Tfl.Api.Presentation.Entities.LineStatus, Tfl.Api.Presentation.Entities","id":0,"statusSeverity":10,"statusSeverityDescription":"Good Service","created":"0001-01-01T00:00:00","validityPeriods":[]}],"routeSections":[],"serviceTypes":[{"$type":"Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities","name":"Regular","uri":"/Line/Route?ids=Northern&serviceTypes=Regular"},{"$type":"Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities","name":"Night","uri":"/Line/Route?ids=Northern&serviceTypes=Night"}],"crowding":{"$type":"Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.Line, Tfl.Api.Presentation.Entities","id":"piccadilly","name":"Piccadilly","modeName":"tube","disruptions":[],"created":"2017-09-26T11:16:37.127Z","modified":"2017-09-26T11:16:37.127Z","lineStatuses":[{"$type":"Tfl.Api.Presentation.Entities.LineStatus, Tfl.Api.Presentation.Entities","id":0,"statusSeverity":10,"statusSeverityDescription":"Good Service","created":"0001-01-01T00:00:00","validityPeriods":[]}],"routeSections":[],"serviceTypes":[{"$type":"Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities","name":"Regular","uri":"/Line/Route?ids=Piccadilly&serviceTypes=Regular"},{"$type":"Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities","name":"Night","uri":"/Line/Route?ids=Piccadilly&serviceTypes=Night"}],"crowding":{"$type":"Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.Line, Tfl.Api.Presentation.Entities","id":"victoria","name":"Victoria","modeName":"tube","disruptions":[],"created":"2017-09-26T11:16:37.143Z","modified":"2017-09-26T11:16:37.143Z","lineStatuses":[{"$type":"Tfl.Api.Presentation.Entities.LineStatus, Tfl.Api.Presentation.Entities","id":0,"statusSeverity":10,"statusSeverityDescription":"Good Service","created":"0001-01-01T00:00:00","validityPeriods":[]}],"routeSections":[],"serviceTypes":[{"$type":"Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities","name":"Regular","uri":"/Line/Route?ids=Victoria&serviceTypes=Regular"},{"$type":"Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities","name":"Night","uri":"/Line/Route?ids=Victoria&serviceTypes=Night"}],"crowding":{"$type":"Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.Line, Tfl.Api.Presentation.Entities","id":"waterloo-city","name":"Waterloo & City","modeName":"tube","disruptions":[],"created":"2017-09-26T11:16:37.127Z","modified":"2017-09-26T11:16:37.127Z","lineStatuses":[{"$type":"Tfl.Api.Presentation.Entities.LineStatus, Tfl.Api.Presentation.Entities","id":0,"statusSeverity":10,"statusSeverityDescription":"Good Service","created":"0001-01-01T00:00:00","validityPeriods":[]}],"routeSections":[],"serviceTypes":[{"$type":"Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities","name":"Regular","uri":"/Line/Route?ids=Waterloo & City&serviceTypes=Regular"}],"crowding":{"$type":"Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"}}]
+2017-09-29 14:21:40 INFO  TubeLineStatusParser:47 -  ------------ Datos parseados correctamente ------------------
+2017-09-29 14:21:40 INFO  HbaseTubeStatusDAO:65 - -------- trying to save in hbase ---------------
+2017-09-29 14:21:40 INFO  HbaseTubeStatusDAO:76 - Row inserted in Hbase, tubeLine Bakerloo statusSeverityDescriptionGood Service reason null id bakerloo
+2017-09-29 14:21:40 INFO  HbaseTubeStatusDAO:76 - Row inserted in Hbase, tubeLine Central statusSeverityDescriptionGood Service reason null id central
+2017-09-29 14:21:40 INFO  HbaseTubeStatusDAO:76 - Row inserted in Hbase, tubeLine Circle statusSeverityDescriptionGood Service reason null id circle
+2017-09-29 14:21:40 INFO  HbaseTubeStatusDAO:76 - Row inserted in Hbase, tubeLine District statusSeverityDescriptionPart Suspended reason District Line: No service between Turnham Green and Richmond due to a signal failure at Richmond. Tickets are being accepted on local buses and South Western Railway. GOOD SERVICE on the rest of the line.  id district
+2017-09-29 14:21:40 INFO  HbaseTubeStatusDAO:76 - Row inserted in Hbase, tubeLine Hammersmith & City statusSeverityDescriptionGood Service reason null id hammersmith-city
+2017-09-29 14:21:40 INFO  HbaseTubeStatusDAO:76 - Row inserted in Hbase, tubeLine Jubilee statusSeverityDescriptionGood Service reason null id jubilee
+2017-09-29 14:21:40 INFO  HbaseTubeStatusDAO:76 - Row inserted in Hbase, tubeLine Metropolitan statusSeverityDescriptionGood Service reason null id metropolitan
+2017-09-29 14:21:40 INFO  HbaseTubeStatusDAO:76 - Row inserted in Hbase, tubeLine Northern statusSeverityDescriptionGood Service reason null id northern
+2017-09-29 14:21:40 INFO  HbaseTubeStatusDAO:76 - Row inserted in Hbase, tubeLine Piccadilly statusSeverityDescriptionGood Service reason null id piccadilly
+2017-09-29 14:21:40 INFO  HbaseTubeStatusDAO:76 - Row inserted in Hbase, tubeLine Victoria statusSeverityDescriptionGood Service reason null id victoria
+2017-09-29 14:21:40 INFO  HbaseTubeStatusDAO:76 - Row inserted in Hbase, tubeLine Waterloo & City statusSeverityDescriptionGood Service reason null id waterloo-city
+2017-09-29 14:21:40 INFO  HbaseTubeStatusDAO:80 - -------- After saving in hbase ---------------
+2017-09-29 14:21:55 INFO  TubeLineStatusParser:25 - [{"$type":"Tfl.Api.Presentation.Entities.Line, Tfl.Api.Presentation.Entities","id":"bakerloo","name":"Bakerloo","modeName":"tube","disruptions":[],"created":"2017-09-26T11:16:37.13Z","modified":"2017-09-26T11:16:37.13Z","lineStatuses":[{"$type":"Tfl.Api.Presentation.Entities.LineStatus, Tfl.Api.Presentation.Entities","id":0,"statusSeverity":10,"statusSeverityDescription":"Good Service","created":"0001-01-01T00:00:00","validityPeriods":[]}],"routeSections":[],"serviceTypes":[{"$type":"Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities","name":"Regular","uri":"/Line/Route?ids=Bakerloo&serviceTypes=Regular"}],"crowding":{"$type":"Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.Line, Tfl.Api.Presentation.Entities","id":"central","name":"Central","modeName":"tube","disruptions":[],"created":"2017-09-26T11:16:37.137Z","modified":"2017-09-26T11:16:37.137Z","lineStatuses":[{"$type":"Tfl.Api.Presentation.Entities.LineStatus, Tfl.Api.Presentation.Entities","id":0,"statusSeverity":10,"statusSeverityDescription":"Good Service","created":"0001-01-01T00:00:00","validityPeriods":[]}],"routeSections":[],"serviceTypes":[{"$type":"Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities","name":"Regular","uri":"/Line/Route?ids=Central&serviceTypes=Regular"},{"$type":"Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities","name":"Night","uri":"/Line/Route?ids=Central&serviceTypes=Night"}],"crowding":{"$type":"Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.Line, Tfl.Api.Presentation.Entities","id":"circle","name":"Circle","modeName":"tube","disruptions":[],"created":"2017-09-26T11:16:37.13Z","modified":"2017-09-26T11:16:37.13Z","lineStatuses":[{"$type":"Tfl.Api.Presentation.Entities.LineStatus, Tfl.Api.Presentation.Entities","id":0,"statusSeverity":10,"statusSeverityDescription":"Good Service","created":"0001-01-01T00:00:00","validityPeriods":[]}],"routeSections":[],"serviceTypes":[{"$type":"Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities","name":"Regular","uri":"/Line/Route?ids=Circle&serviceTypes=Regular"}],"crowding":{"$type":"Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.Line, Tfl.Api.Presentation.Entities","id":"district","name":"District","modeName":"tube","disruptions":[],"created":"2017-09-26T11:16:37.127Z","modified":"2017-09-26T11:16:37.127Z","lineStatuses":[{"$type":"Tfl.Api.Presentation.Entities.LineStatus, Tfl.Api.Presentation.Entities","id":0,"lineId":"district","statusSeverity":3,"statusSeverityDescription":"Part Suspended","reason":"District Line: No service between Turnham Green and Richmond due to a signal failure at Richmond. Tickets are being accepted on local buses and South Western Railway. GOOD SERVICE on the rest of the line. ","created":"0001-01-01T00:00:00","validityPeriods":[{"$type":"Tfl.Api.Presentation.Entities.ValidityPeriod, Tfl.Api.Presentation.Entities","fromDate":"2017-09-29T11:18:35Z","toDate":"2017-09-29T14:18:35Z","isNow":true}],"disruption":{"$type":"Tfl.Api.Presentation.Entities.Disruption, Tfl.Api.Presentation.Entities","category":"RealTime","categoryDescription":"RealTime","description":"District Line: No service between Turnham Green and Richmond due to a signal failure at Richmond. Tickets are being accepted on local buses and South Western Railway. GOOD SERVICE on the rest of the line. ","affectedRoutes":[],"affectedStops":[],"isBlocking":true,"closureText":"partSuspended"}}],"routeSections":[],"serviceTypes":[{"$type":"Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities","name":"Regular","uri":"/Line/Route?ids=District&serviceTypes=Regular"}],"crowding":{"$type":"Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.Line, Tfl.Api.Presentation.Entities","id":"hammersmith-city","name":"Hammersmith & City","modeName":"tube","disruptions":[],"created":"2017-09-26T11:16:37.127Z","modified":"2017-09-26T11:16:37.127Z","lineStatuses":[{"$type":"Tfl.Api.Presentation.Entities.LineStatus, Tfl.Api.Presentation.Entities","id":0,"statusSeverity":10,"statusSeverityDescription":"Good Service","created":"0001-01-01T00:00:00","validityPeriods":[]}],"routeSections":[],"serviceTypes":[{"$type":"Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities","name":"Regular","uri":"/Line/Route?ids=Hammersmith & City&serviceTypes=Regular"}],"crowding":{"$type":"Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.Line, Tfl.Api.Presentation.Entities","id":"jubilee","name":"Jubilee","modeName":"tube","disruptions":[],"created":"2017-09-26T11:16:37.137Z","modified":"2017-09-26T11:16:37.137Z","lineStatuses":[{"$type":"Tfl.Api.Presentation.Entities.LineStatus, Tfl.Api.Presentation.Entities","id":0,"statusSeverity":10,"statusSeverityDescription":"Good Service","created":"0001-01-01T00:00:00","validityPeriods":[]}],"routeSections":[],"serviceTypes":[{"$type":"Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities","name":"Regular","uri":"/Line/Route?ids=Jubilee&serviceTypes=Regular"},{"$type":"Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities","name":"Night","uri":"/Line/Route?ids=Jubilee&serviceTypes=Night"}],"crowding":{"$type":"Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.Line, Tfl.Api.Presentation.Entities","id":"metropolitan","name":"Metropolitan","modeName":"tube","disruptions":[],"created":"2017-09-26T11:16:37.127Z","modified":"2017-09-26T11:16:37.127Z","lineStatuses":[{"$type":"Tfl.Api.Presentation.Entities.LineStatus, Tfl.Api.Presentation.Entities","id":0,"statusSeverity":10,"statusSeverityDescription":"Good Service","created":"0001-01-01T00:00:00","validityPeriods":[]}],"routeSections":[],"serviceTypes":[{"$type":"Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities","name":"Regular","uri":"/Line/Route?ids=Metropolitan&serviceTypes=Regular"}],"crowding":{"$type":"Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.Line, Tfl.Api.Presentation.Entities","id":"northern","name":"Northern","modeName":"tube","disruptions":[],"created":"2017-09-26T11:16:37.127Z","modified":"2017-09-26T11:16:37.127Z","lineStatuses":[{"$type":"Tfl.Api.Presentation.Entities.LineStatus, Tfl.Api.Presentation.Entities","id":0,"statusSeverity":10,"statusSeverityDescription":"Good Service","created":"0001-01-01T00:00:00","validityPeriods":[]}],"routeSections":[],"serviceTypes":[{"$type":"Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities","name":"Regular","uri":"/Line/Route?ids=Northern&serviceTypes=Regular"},{"$type":"Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities","name":"Night","uri":"/Line/Route?ids=Northern&serviceTypes=Night"}],"crowding":{"$type":"Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.Line, Tfl.Api.Presentation.Entities","id":"piccadilly","name":"Piccadilly","modeName":"tube","disruptions":[],"created":"2017-09-26T11:16:37.127Z","modified":"2017-09-26T11:16:37.127Z","lineStatuses":[{"$type":"Tfl.Api.Presentation.Entities.LineStatus, Tfl.Api.Presentation.Entities","id":0,"statusSeverity":10,"statusSeverityDescription":"Good Service","created":"0001-01-01T00:00:00","validityPeriods":[]}],"routeSections":[],"serviceTypes":[{"$type":"Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities","name":"Regular","uri":"/Line/Route?ids=Piccadilly&serviceTypes=Regular"},{"$type":"Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities","name":"Night","uri":"/Line/Route?ids=Piccadilly&serviceTypes=Night"}],"crowding":{"$type":"Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.Line, Tfl.Api.Presentation.Entities","id":"victoria","name":"Victoria","modeName":"tube","disruptions":[],"created":"2017-09-26T11:16:37.143Z","modified":"2017-09-26T11:16:37.143Z","lineStatuses":[{"$type":"Tfl.Api.Presentation.Entities.LineStatus, Tfl.Api.Presentation.Entities","id":0,"statusSeverity":10,"statusSeverityDescription":"Good Service","created":"0001-01-01T00:00:00","validityPeriods":[]}],"routeSections":[],"serviceTypes":[{"$type":"Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities","name":"Regular","uri":"/Line/Route?ids=Victoria&serviceTypes=Regular"},{"$type":"Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities","name":"Night","uri":"/Line/Route?ids=Victoria&serviceTypes=Night"}],"crowding":{"$type":"Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.Line, Tfl.Api.Presentation.Entities","id":"waterloo-city","name":"Waterloo & City","modeName":"tube","disruptions":[],"created":"2017-09-26T11:16:37.127Z","modified":"2017-09-26T11:16:37.127Z","lineStatuses":[{"$type":"Tfl.Api.Presentation.Entities.LineStatus, Tfl.Api.Presentation.Entities","id":0,"statusSeverity":10,"statusSeverityDescription":"Good Service","created":"0001-01-01T00:00:00","validityPeriods":[]}],"routeSections":[],"serviceTypes":[{"$type":"Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities","name":"Regular","uri":"/Line/Route?ids=Waterloo & City&serviceTypes=Regular"}],"crowding":{"$type":"Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"}}]
+2017-09-29 14:21:55 INFO  TubeLineStatusParser:47 -  ------------ Datos parseados correctamente ------------------
+2017-09-29 14:21:55 INFO  HbaseTubeStatusDAO:65 - -------- trying to save in hbase ---------------
+2017-09-29 14:21:55 INFO  HbaseTubeStatusDAO:76 - Row inserted in Hbase, tubeLine Bakerloo statusSeverityDescriptionGood Service reason null id bakerloo
+2017-09-29 14:21:55 INFO  HbaseTubeStatusDAO:76 - Row inserted in Hbase, tubeLine Central statusSeverityDescriptionGood Service reason null id central
+2017-09-29 14:21:55 INFO  HbaseTubeStatusDAO:76 - Row inserted in Hbase, tubeLine Circle statusSeverityDescriptionGood Service reason null id circle
+2017-09-29 14:21:55 INFO  HbaseTubeStatusDAO:76 - Row inserted in Hbase, tubeLine District statusSeverityDescriptionPart Suspended reason District Line: No service between Turnham Green and Richmond due to a signal failure at Richmond. Tickets are being accepted on local buses and South Western Railway. GOOD SERVICE on the rest of the line.  id district
+2017-09-29 14:21:55 INFO  HbaseTubeStatusDAO:76 - Row inserted in Hbase, tubeLine Hammersmith & City statusSeverityDescriptionGood Service reason null id hammersmith-city
+2017-09-29 14:21:55 INFO  HbaseTubeStatusDAO:76 - Row inserted in Hbase, tubeLine Jubilee statusSeverityDescriptionGood Service reason null id jubilee
+2017-09-29 14:21:55 INFO  HbaseTubeStatusDAO:76 - Row inserted in Hbase, tubeLine Metropolitan statusSeverityDescriptionGood Service reason null id metropolitan
+2017-09-29 14:21:55 INFO  HbaseTubeStatusDAO:76 - Row inserted in Hbase, tubeLine Northern statusSeverityDescriptionGood Service reason null id northern
+2017-09-29 14:21:55 INFO  HbaseTubeStatusDAO:76 - Row inserted in Hbase, tubeLine Piccadilly statusSeverityDescriptionGood Service reason null id piccadilly
+2017-09-29 14:21:55 INFO  HbaseTubeStatusDAO:76 - Row inserted in Hbase, tubeLine Victoria statusSeverityDescriptionGood Service reason null id victoria
+2017-09-29 14:21:55 INFO  HbaseTubeStatusDAO:76 - Row inserted in Hbase, tubeLine Waterloo & City statusSeverityDescriptionGood Service reason null id waterloo-city
+2017-09-29 14:21:55 INFO  HbaseTubeStatusDAO:80 - -------- After saving in hbase ---------------
+2017-09-29 14:22:14 INFO  TubeLineStatusParser:25 - [{"$type":"Tfl.Api.Presentation.Entities.Line, Tfl.Api.Presentation.Entities","id":"bakerloo","name":"Bakerloo","modeName":"tube","disruptions":[],"created":"2017-09-26T11:16:37.13Z","modified":"2017-09-26T11:16:37.13Z","lineStatuses":[{"$type":"Tfl.Api.Presentation.Entities.LineStatus, Tfl.Api.Presentation.Entities","id":0,"statusSeverity":10,"statusSeverityDescription":"Good Service","created":"0001-01-01T00:00:00","validityPeriods":[]}],"routeSections":[],"serviceTypes":[{"$type":"Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities","name":"Regular","uri":"/Line/Route?ids=Bakerloo&serviceTypes=Regular"}],"crowding":{"$type":"Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.Line, Tfl.Api.Presentation.Entities","id":"central","name":"Central","modeName":"tube","disruptions":[],"created":"2017-09-26T11:16:37.137Z","modified":"2017-09-26T11:16:37.137Z","lineStatuses":[{"$type":"Tfl.Api.Presentation.Entities.LineStatus, Tfl.Api.Presentation.Entities","id":0,"statusSeverity":10,"statusSeverityDescription":"Good Service","created":"0001-01-01T00:00:00","validityPeriods":[]}],"routeSections":[],"serviceTypes":[{"$type":"Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities","name":"Regular","uri":"/Line/Route?ids=Central&serviceTypes=Regular"},{"$type":"Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities","name":"Night","uri":"/Line/Route?ids=Central&serviceTypes=Night"}],"crowding":{"$type":"Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.Line, Tfl.Api.Presentation.Entities","id":"circle","name":"Circle","modeName":"tube","disruptions":[],"created":"2017-09-26T11:16:37.13Z","modified":"2017-09-26T11:16:37.13Z","lineStatuses":[{"$type":"Tfl.Api.Presentation.Entities.LineStatus, Tfl.Api.Presentation.Entities","id":0,"statusSeverity":10,"statusSeverityDescription":"Good Service","created":"0001-01-01T00:00:00","validityPeriods":[]}],"routeSections":[],"serviceTypes":[{"$type":"Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities","name":"Regular","uri":"/Line/Route?ids=Circle&serviceTypes=Regular"}],"crowding":{"$type":"Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.Line, Tfl.Api.Presentation.Entities","id":"district","name":"District","modeName":"tube","disruptions":[],"created":"2017-09-26T11:16:37.127Z","modified":"2017-09-26T11:16:37.127Z","lineStatuses":[{"$type":"Tfl.Api.Presentation.Entities.LineStatus, Tfl.Api.Presentation.Entities","id":0,"lineId":"district","statusSeverity":3,"statusSeverityDescription":"Part Suspended","reason":"District Line: No service between Turnham Green and Richmond due to a signal failure at Richmond. Tickets are being accepted on local buses and South Western Railway. GOOD SERVICE on the rest of the line. ","created":"0001-01-01T00:00:00","validityPeriods":[{"$type":"Tfl.Api.Presentation.Entities.ValidityPeriod, Tfl.Api.Presentation.Entities","fromDate":"2017-09-29T11:18:35Z","toDate":"2017-09-29T14:18:35Z","isNow":true}],"disruption":{"$type":"Tfl.Api.Presentation.Entities.Disruption, Tfl.Api.Presentation.Entities","category":"RealTime","categoryDescription":"RealTime","description":"District Line: No service between Turnham Green and Richmond due to a signal failure at Richmond. Tickets are being accepted on local buses and South Western Railway. GOOD SERVICE on the rest of the line. ","affectedRoutes":[],"affectedStops":[],"isBlocking":true,"closureText":"partSuspended"}}],"routeSections":[],"serviceTypes":[{"$type":"Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities","name":"Regular","uri":"/Line/Route?ids=District&serviceTypes=Regular"}],"crowding":{"$type":"Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.Line, Tfl.Api.Presentation.Entities","id":"hammersmith-city","name":"Hammersmith & City","modeName":"tube","disruptions":[],"created":"2017-09-26T11:16:37.127Z","modified":"2017-09-26T11:16:37.127Z","lineStatuses":[{"$type":"Tfl.Api.Presentation.Entities.LineStatus, Tfl.Api.Presentation.Entities","id":0,"statusSeverity":10,"statusSeverityDescription":"Good Service","created":"0001-01-01T00:00:00","validityPeriods":[]}],"routeSections":[],"serviceTypes":[{"$type":"Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities","name":"Regular","uri":"/Line/Route?ids=Hammersmith & City&serviceTypes=Regular"}],"crowding":{"$type":"Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.Line, Tfl.Api.Presentation.Entities","id":"jubilee","name":"Jubilee","modeName":"tube","disruptions":[],"created":"2017-09-26T11:16:37.137Z","modified":"2017-09-26T11:16:37.137Z","lineStatuses":[{"$type":"Tfl.Api.Presentation.Entities.LineStatus, Tfl.Api.Presentation.Entities","id":0,"statusSeverity":10,"statusSeverityDescription":"Good Service","created":"0001-01-01T00:00:00","validityPeriods":[]}],"routeSections":[],"serviceTypes":[{"$type":"Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities","name":"Regular","uri":"/Line/Route?ids=Jubilee&serviceTypes=Regular"},{"$type":"Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities","name":"Night","uri":"/Line/Route?ids=Jubilee&serviceTypes=Night"}],"crowding":{"$type":"Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.Line, Tfl.Api.Presentation.Entities","id":"metropolitan","name":"Metropolitan","modeName":"tube","disruptions":[],"created":"2017-09-26T11:16:37.127Z","modified":"2017-09-26T11:16:37.127Z","lineStatuses":[{"$type":"Tfl.Api.Presentation.Entities.LineStatus, Tfl.Api.Presentation.Entities","id":0,"statusSeverity":10,"statusSeverityDescription":"Good Service","created":"0001-01-01T00:00:00","validityPeriods":[]}],"routeSections":[],"serviceTypes":[{"$type":"Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities","name":"Regular","uri":"/Line/Route?ids=Metropolitan&serviceTypes=Regular"}],"crowding":{"$type":"Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.Line, Tfl.Api.Presentation.Entities","id":"northern","name":"Northern","modeName":"tube","disruptions":[],"created":"2017-09-26T11:16:37.127Z","modified":"2017-09-26T11:16:37.127Z","lineStatuses":[{"$type":"Tfl.Api.Presentation.Entities.LineStatus, Tfl.Api.Presentation.Entities","id":0,"statusSeverity":10,"statusSeverityDescription":"Good Service","created":"0001-01-01T00:00:00","validityPeriods":[]}],"routeSections":[],"serviceTypes":[{"$type":"Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities","name":"Regular","uri":"/Line/Route?ids=Northern&serviceTypes=Regular"},{"$type":"Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities","name":"Night","uri":"/Line/Route?ids=Northern&serviceTypes=Night"}],"crowding":{"$type":"Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.Line, Tfl.Api.Presentation.Entities","id":"piccadilly","name":"Piccadilly","modeName":"tube","disruptions":[],"created":"2017-09-26T11:16:37.127Z","modified":"2017-09-26T11:16:37.127Z","lineStatuses":[{"$type":"Tfl.Api.Presentation.Entities.LineStatus, Tfl.Api.Presentation.Entities","id":0,"statusSeverity":10,"statusSeverityDescription":"Good Service","created":"0001-01-01T00:00:00","validityPeriods":[]}],"routeSections":[],"serviceTypes":[{"$type":"Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities","name":"Regular","uri":"/Line/Route?ids=Piccadilly&serviceTypes=Regular"},{"$type":"Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities","name":"Night","uri":"/Line/Route?ids=Piccadilly&serviceTypes=Night"}],"crowding":{"$type":"Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.Line, Tfl.Api.Presentation.Entities","id":"victoria","name":"Victoria","modeName":"tube","disruptions":[],"created":"2017-09-26T11:16:37.143Z","modified":"2017-09-26T11:16:37.143Z","lineStatuses":[{"$type":"Tfl.Api.Presentation.Entities.LineStatus, Tfl.Api.Presentation.Entities","id":0,"statusSeverity":10,"statusSeverityDescription":"Good Service","created":"0001-01-01T00:00:00","validityPeriods":[]}],"routeSections":[],"serviceTypes":[{"$type":"Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities","name":"Regular","uri":"/Line/Route?ids=Victoria&serviceTypes=Regular"},{"$type":"Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities","name":"Night","uri":"/Line/Route?ids=Victoria&serviceTypes=Night"}],"crowding":{"$type":"Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.Line, Tfl.Api.Presentation.Entities","id":"waterloo-city","name":"Waterloo & City","modeName":"tube","disruptions":[],"created":"2017-09-26T11:16:37.127Z","modified":"2017-09-26T11:16:37.127Z","lineStatuses":[{"$type":"Tfl.Api.Presentation.Entities.LineStatus, Tfl.Api.Presentation.Entities","id":0,"statusSeverity":10,"statusSeverityDescription":"Good Service","created":"0001-01-01T00:00:00","validityPeriods":[]}],"routeSections":[],"serviceTypes":[{"$type":"Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities","name":"Regular","uri":"/Line/Route?ids=Waterloo & City&serviceTypes=Regular"}],"crowding":{"$type":"Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"}}]
+2017-09-29 14:22:14 INFO  TubeLineStatusParser:47 -  ------------ Datos parseados correctamente ------------------
+2017-09-29 14:22:14 INFO  HbaseTubeStatusDAO:65 - -------- trying to save in hbase ---------------
+2017-09-29 14:22:14 INFO  HbaseTubeStatusDAO:76 - Row inserted in Hbase, tubeLine Bakerloo statusSeverityDescriptionGood Service reason null id bakerloo
+2017-09-29 14:22:14 INFO  HbaseTubeStatusDAO:76 - Row inserted in Hbase, tubeLine Central statusSeverityDescriptionGood Service reason null id central
+2017-09-29 14:22:14 INFO  HbaseTubeStatusDAO:76 - Row inserted in Hbase, tubeLine Circle statusSeverityDescriptionGood Service reason null id circle
+2017-09-29 14:22:14 INFO  HbaseTubeStatusDAO:76 - Row inserted in Hbase, tubeLine District statusSeverityDescriptionPart Suspended reason District Line: No service between Turnham Green and Richmond due to a signal failure at Richmond. Tickets are being accepted on local buses and South Western Railway. GOOD SERVICE on the rest of the line.  id district
+2017-09-29 14:22:14 INFO  HbaseTubeStatusDAO:76 - Row inserted in Hbase, tubeLine Hammersmith & City statusSeverityDescriptionGood Service reason null id hammersmith-city
+2017-09-29 14:22:14 INFO  HbaseTubeStatusDAO:76 - Row inserted in Hbase, tubeLine Jubilee statusSeverityDescriptionGood Service reason null id jubilee
+2017-09-29 14:22:14 INFO  HbaseTubeStatusDAO:76 - Row inserted in Hbase, tubeLine Metropolitan statusSeverityDescriptionGood Service reason null id metropolitan
+2017-09-29 14:22:14 INFO  HbaseTubeStatusDAO:76 - Row inserted in Hbase, tubeLine Northern statusSeverityDescriptionGood Service reason null id northern
+2017-09-29 14:22:14 INFO  HbaseTubeStatusDAO:76 - Row inserted in Hbase, tubeLine Piccadilly statusSeverityDescriptionGood Service reason null id piccadilly
+2017-09-29 14:22:14 INFO  HbaseTubeStatusDAO:76 - Row inserted in Hbase, tubeLine Victoria statusSeverityDescriptionGood Service reason null id victoria
+2017-09-29 14:22:14 INFO  HbaseTubeStatusDAO:76 - Row inserted in Hbase, tubeLine Waterloo & City statusSeverityDescriptionGood Service reason null id waterloo-city
+2017-09-29 14:22:14 INFO  HbaseTubeStatusDAO:80 - -------- After saving in hbase ---------------
