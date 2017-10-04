@@ -5,106 +5,118 @@ package com.plexustech.pojos;
  */
 public class TubeLineStatus {
 
-    private String $type;
-    private String created;
-    private Crowding crowding;
-    private String[] disruptions;
-    private String id;
-    private LineStatus[] lineStatuses;
-    private String modeName;
-    private String modified;
-    private String name;
-    private String[] routeSections;
-    private ServiceType[] serviceTypes;
+    private TubeStatus[] tubeStatuses;
 
-    public String get$type() {
-        return $type;
+    public TubeStatus[] getTubeStatuses() {
+        return tubeStatuses;
     }
 
-    public void set$type(String $type) {
-        this.$type = $type;
+    public void setTubeStatuses(TubeStatus[] tubeStatuses) {
+        this.tubeStatuses = tubeStatuses;
     }
 
-    public String getCreated() {
-        return created;
-    }
+    public class TubeStatus{
+        private String $type;
+        private String created;
+        private Crowding crowding;
+        private String[] disruptions;
+        private String id;
+        private LineStatus[] lineStatuses;
+        private String modeName;
+        private String modified;
+        private String name;
+        private String[] routeSections;
+        private ServiceType[] serviceTypes;
 
-    public void setCreated(String created) {
-        this.created = created;
-    }
+        public String get$type() {
+            return $type;
+        }
 
-    public Crowding getCrowding() {
-        return crowding;
-    }
+        public void set$type(String $type) {
+            this.$type = $type;
+        }
 
-    public void setCrowding(Crowding crowding) {
-        this.crowding = crowding;
-    }
+        public String getCreated() {
+            return created;
+        }
 
-    public String[] getDisruptions() {
-        return disruptions;
-    }
+        public void setCreated(String created) {
+            this.created = created;
+        }
 
-    public void setDisruptions(String[] disruptions) {
-        this.disruptions = disruptions;
-    }
+        public Crowding getCrowding() {
+            return crowding;
+        }
 
-    public String getId() {
-        return id;
-    }
+        public void setCrowding(Crowding crowding) {
+            this.crowding = crowding;
+        }
 
-    public void setId(String id) {
-        this.id = id;
-    }
+        public String[] getDisruptions() {
+            return disruptions;
+        }
 
-    public LineStatus[] getLineStatuses() {
-        return lineStatuses;
-    }
+        public void setDisruptions(String[] disruptions) {
+            this.disruptions = disruptions;
+        }
 
-    public void setLineStatuses(LineStatus[] lineStatuses) {
-        this.lineStatuses = lineStatuses;
-    }
+        public String getId() {
+            return id;
+        }
 
-    public String getModeName() {
-        return modeName;
-    }
+        public void setId(String id) {
+            this.id = id;
+        }
 
-    public void setModeName(String modeName) {
-        this.modeName = modeName;
-    }
+        public LineStatus[] getLineStatuses() {
+            return lineStatuses;
+        }
 
-    public String getModified() {
-        return modified;
-    }
+        public void setLineStatuses(LineStatus[] lineStatuses) {
+            this.lineStatuses = lineStatuses;
+        }
 
-    public void setModified(String modified) {
-        this.modified = modified;
-    }
+        public String getModeName() {
+            return modeName;
+        }
 
-    public String getName() {
-        return name;
-    }
+        public void setModeName(String modeName) {
+            this.modeName = modeName;
+        }
 
-    public void setName(String name) {
-        this.name = name;
-    }
+        public String getModified() {
+            return modified;
+        }
 
-    public String[] getRouteSections() {
-        return routeSections;
-    }
+        public void setModified(String modified) {
+            this.modified = modified;
+        }
 
-    public void setRouteSections(String[] routeSections) {
-        this.routeSections = routeSections;
-    }
+        public String getName() {
+            return name;
+        }
 
-    public ServiceType[] getServiceTypes() {
-        return serviceTypes;
-    }
+        public void setName(String name) {
+            this.name = name;
+        }
 
-    public void setServiceTypes(ServiceType[] serviceTypes) {
-        this.serviceTypes = serviceTypes;
-    }
+        public String[] getRouteSections() {
+            return routeSections;
+        }
 
+        public void setRouteSections(String[] routeSections) {
+            this.routeSections = routeSections;
+        }
+
+        public ServiceType[] getServiceTypes() {
+            return serviceTypes;
+        }
+
+        public void setServiceTypes(ServiceType[] serviceTypes) {
+            this.serviceTypes = serviceTypes;
+        }
+
+    }
 
     public class Crowding{
         private String $type;

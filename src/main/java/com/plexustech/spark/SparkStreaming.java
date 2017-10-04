@@ -1,8 +1,6 @@
 package com.plexustech.spark;
 
-import com.plexustech.hbase.HbaseClient;
-import com.plexustech.hbase.HbaseTubeStatusDAO;
-import static com.plexustech.parser.TubeLineStatusParser.*;
+import com.plexustech.hbase.*;
 import org.apache.hadoop.hbase.client.Connection;
 import org.apache.hadoop.hbase.client.ConnectionFactory;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
@@ -18,10 +16,9 @@ import org.apache.spark.streaming.kafka010.KafkaUtils;
 import org.apache.spark.streaming.kafka010.LocationStrategies;
 
 import java.io.IOException;
-import java.util.Arrays;
-import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 
 /**
@@ -29,68 +26,86 @@ import java.util.Map;
  */
 public class SparkStreaming {
 
-    final static Logger LOGGER = Logger.getLogger(SparkStreaming.class);
+    private final static Logger LOGGER = Logger.getLogger(SparkStreaming.class);
 
-    private String[] topics = null;
-    private String bootstrapserver = null;
+    private Set<String> topicSet = null;
+    private String bootstrapserver = "hortonworks21:6667";
     private SparkConf sparkConf = null;
-    private final int SECONDS = 5;
-    private boolean localExecution;
+    private int SECONDS = 120;
     private boolean fromBeginning;
-    private String topic;
 
-
-    public void setLocalExecution(boolean localExecution){
-        this.localExecution = localExecution;
-    }
-    public void setFromBeginning(boolean fromBeginning){ this.fromBeginning = fromBeginning; }
-    public void setTopic(String topic){ this.topic = topic; }
-
-
-    private void setLocalExecution(){
-        this.sparkConf = new SparkConf()
-                .setAppName("ChatboxProcessor")
-                .setMaster("local[*]");
-        topics = new String[]{topic};
-        bootstrapserver = "kafka:9092";
-    }
-
-    private void setHortonworksExecution(){
+    public SparkStreaming(){
         this.sparkConf = new SparkConf()
                 .setAppName("ChatboxProcessor");
-        topics = new String[]{topic};
-        bootstrapserver = "hortonworks21:6667";
+        HbaseClient.setConfig();
     }
 
-    public void executeSpark() throws InterruptedException {
-        if(localExecution){
-            setLocalExecution();
-        } else{
-            setHortonworksExecution();
-        }
+    public void setTestExecution(){
+        this.sparkConf.setMaster("local[*]");
+        this.bootstrapserver = "kafka:9092";
+        this.SECONDS = 5;
+        HbaseClient.setTestConfig();
+        createLocalTables();
+    }
 
-        createTubeTableIfNotExists(localExecution);
+    public void setFromBeginning(boolean fromBeginning){ this.fromBeginning = fromBeginning; }
+    public void setTopicSet(Set<String> topicSet){ this.topicSet = topicSet; }
 
+    public void executeSpark(){
+        //sparkConf.set("spark.streaming.concurrentJobs", "2");
         JavaStreamingContext jssc = new JavaStreamingContext(sparkConf, Durations.seconds(SECONDS));
         readSparkFromKafka(jssc);
 
         jssc.start();
-        jssc.awaitTermination();
-    }
-
-    private static Connection getHBaseConnection(boolean localExecution) throws IOException {
-        return ConnectionFactory.createConnection(localExecution ? HbaseClient.getTestConnection()
-                : HbaseClient.getUnsecureConnection());
-    }
-
-    private void createTubeTableIfNotExists(boolean localExecution) {
-        try(Connection connection = getHBaseConnection(localExecution)) {
-            HbaseTubeStatusDAO dao = new HbaseTubeStatusDAO(connection);
-            if(localExecution)
-                dao.createTableIfNotExists();
-        } catch (IOException e) {
-            LOGGER.error("Error creando la conexion con Hbase en rdd.foreachPartition", e);
+        try {
+            jssc.awaitTermination();
+        } catch (InterruptedException e) {
+            LOGGER.error("Error when spark was awaiting termination ", e);
         }
+    }
+
+    private static Connection getHBaseConnection() throws IOException {
+        return ConnectionFactory.createConnection(HbaseClient.getConfiguration());
+    }
+
+    private void createLocalTables() {
+        try(Connection connection = getHBaseConnection()) {
+            HbaseDAO dao = new TubeStatusDAO(connection);
+            dao.createTable();
+            dao = new CycleHireDAO(connection);
+            dao.createTable();
+        } catch (Throwable e) {
+            LOGGER.error("Error creating local tables in Hbase", e);
+        }
+    }
+
+
+
+    private void readSparkFromKafka(JavaStreamingContext jssc){
+        Map<String, Object> consumerConfig = getKafkaConsumerConfig();
+
+        final JavaInputDStream<ConsumerRecord<String, String>> directKafkaStream =
+                KafkaUtils.createDirectStream(
+                        jssc,
+                        LocationStrategies.PreferConsistent(),
+                        ConsumerStrategies.<String, String>Subscribe(topicSet, consumerConfig)
+                );
+
+        directKafkaStream.foreachRDD(rdd -> {
+            // Aqui estoy en master
+            rdd.foreachPartition(partition -> {
+                // Abrir conexion
+                try(Connection connection = getHBaseConnection()) {
+                    // Se crean los dao, se instancia por particion
+                    DAOContainer daoContainer = new DAOContainer(connection);
+                    partition.forEachRemaining(record ->
+                        daoContainer.save(record.value())
+                    );
+                } catch (Throwable e) {
+                    LOGGER.error("Error creando la conexion con Hbase en rdd.foreachPartition", e);
+                }
+            });
+        });
     }
 
     private Map<String, Object> getKafkaConsumerConfig(){
@@ -100,46 +115,12 @@ public class SparkStreaming {
         consumerConfig.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
         consumerConfig.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
 
-        if(fromBeginning)
-            consumerConfig.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, "earliest");
-        else
-            consumerConfig.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, "latest");
+        consumerConfig.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, fromBeginning ? "earliest" : "latest");
 
         return consumerConfig;
     }
 
-    private Collection<String> getKafkaTopics(){
-        return Arrays.asList(topics);
-    }
 
-    private void readSparkFromKafka(JavaStreamingContext jssc){
-        Map<String, Object> consumerConfig = getKafkaConsumerConfig();
 
-        final JavaInputDStream<ConsumerRecord<String, String>> directKafkaStream =
-                KafkaUtils.createDirectStream(
-                        jssc,
-                        LocationStrategies.PreferConsistent(),
-                        ConsumerStrategies.<String, String>Subscribe(getKafkaTopics(), consumerConfig)
-                );
 
-        boolean localExecution = this.localExecution;
-
-        directKafkaStream.foreachRDD(rdd -> {
-            // Aqui estoy en master
-            rdd.foreachPartition(partition -> {
-                // Abrir conexion
-                try(Connection connection = getHBaseConnection(localExecution)) {
-                    HbaseTubeStatusDAO dao = new HbaseTubeStatusDAO(connection);
-                    partition.forEachRemaining(record -> {
-                    try{
-                        dao.saveTubeStatus(parse(record.value()));
-                    }catch(Throwable e){
-                        LOGGER.error(String.format("Error salvando el mensaje %s", record.value()), e);
-                    }});
-                } catch (Throwable e) {
-                    LOGGER.error("Error creando la conexion con Hbase en rdd.foreachPartition", e);
-                }
-            });
-        });
-    }
 }

@@ -9,7 +9,6 @@ import org.apache.hadoop.hbase.client.*;
 import org.apache.hadoop.hbase.util.Bytes;
 import org.apache.log4j.Logger;
 
-import java.io.IOException;
 import java.io.Serializable;
 import java.text.MessageFormat;
 import java.util.List;
@@ -19,39 +18,42 @@ import java.util.List;
  */
 public class HbaseClient implements Serializable {
 
-    public static final Logger LOGGER = Logger.getLogger(HbaseClient.class);
+    private static final Logger LOGGER = Logger.getLogger(HbaseClient.class);
 
-    public static Configuration getTestConnection(){
-        Configuration conf = HBaseConfiguration.create();
-        conf.set("hbase.zookeeper.property.clientPort", "2181");
-        conf.set("hbase.zookeeper.quorum", "hbase");
+    private static Configuration config;
 
-        return conf;
+    public static void setTestConfig(){
+        config = HBaseConfiguration.create();
+        config.set("hbase.zookeeper.property.clientPort", "2181");
+        config.set("hbase.zookeeper.quorum", "hbase");
+        LOGGER.info("----- Created Test Config ----------");
     }
 
-    public static Configuration getUnsecureConnection(){
-        Configuration config = HBaseConfiguration.create();
+    public static void setConfig(){
+        config = HBaseConfiguration.create();
         config.set("zookeeper.znode.parent", "/hbase-unsecure");
+    }
+
+    public static Configuration getConfiguration(){
         return config;
     }
 
-
-    public static void createHbaseTable(Connection connection, String tableName, List<String> colFamilies) {
+    static void createHbaseTable(Connection connection, String tableName, List<String> colFamilies) {
         try(Admin admin = connection.getAdmin()) {
 
             TableName table1 = TableName.valueOf(tableName);
             if (!admin.tableExists(table1)) {
                 HTableDescriptor desc = new HTableDescriptor(table1);
-                colFamilies.stream().forEach(cf -> desc.addFamily(new HColumnDescriptor(cf)));
+                colFamilies.forEach(cf -> desc.addFamily(new HColumnDescriptor(cf)));
                 admin.createTable(desc);
             }
-        } catch (IOException e) {
+        } catch (Throwable e) {
             String msg = MessageFormat.format("Error creating tableName {0} colFamily {1}", tableName, colFamilies);
             LOGGER.error(msg, e);
         }
     }
 
-    protected static void putRow(Connection connection, String tableName, String colFamName, String rowKey, String colQualifier,
+    static void putRow(Connection connection, String tableName, String colFamName, String rowKey, String colQualifier,
                        String value) {
         if(colFamName != null && value != null){
             try{
@@ -61,7 +63,7 @@ public class HbaseClient implements Serializable {
                 TableName table1 = TableName.valueOf(tableName);
                 Table table = connection.getTable(table1);
                 table.put(p);
-            } catch (IOException e) {
+            } catch (Throwable e) {
                 String msg = MessageFormat.format("Error putting row in tableName {0}, colFamName {1}, rowKey {2}, colQualifier {3}, value {4}",
                         tableName, colFamName, rowKey, colQualifier, value);
                 LOGGER.error(msg, e);
@@ -69,7 +71,7 @@ public class HbaseClient implements Serializable {
         }
     }
 
-    protected static Result getRow(Connection connection, String tableName, String colFamName, String rowKey, String colQualifier){
+    static Result getRow(Connection connection, String tableName, String colFamName, String rowKey, String colQualifier){
         Result result = null;
         try{
             byte[] row1 = Bytes.toBytes(rowKey);
@@ -78,7 +80,7 @@ public class HbaseClient implements Serializable {
             TableName table1 = TableName.valueOf(tableName);
             Table table = connection.getTable(table1);
             result = table.get(g);
-        } catch (IOException e) {
+        } catch (Throwable e) {
             String msg = MessageFormat.format("Error getting row in tableName {0}, colFamName {1}, rowKey {2}, colQualifier {3}",
                     tableName, colFamName, rowKey, colQualifier);
             LOGGER.error(msg, e);
